@@ -136,7 +136,7 @@ a:active {
         background-color: var(--font-contenu);
         border: solid var(--font-contours);
         padding: 6px;
-        margin: 2% 4% 8% 4%;
+        margin: 1.5% 32% 3% 32%;
         text-align: center;
         border-radius: 25px;
         box-shadow: 0px 0px 25px var(--ombre-moyenne);
@@ -148,7 +148,7 @@ a:active {
         color:var(--font-contours);
         border: solid var(--font-contours);
         padding: 3px;
-        margin: 1% 2% 4% 2%;
+        margin: 1% 15% 4% 15%;
         text-align: center;
         border-radius: 25px;
         box-shadow: 0px 0px 25px var(--ombre-moyenne);
@@ -163,7 +163,7 @@ a:active {
         color:var(--font-contours);
         border: solid var(--font-contours);
         padding: 4px;
-        margin: 2% 16% 4% 16%;
+        margin: 2% 37% 2% 37%;
         text-align: center;
         border-radius: 50px;
         box-shadow: 0px 0px 20px var(--ombre-moyenne);
@@ -175,7 +175,7 @@ a:active {
         color:var(--font-contours);
         border: solid var(--font-contours);
         padding: 2px;
-        margin: 1% 8% 2% 8%;
+        margin: 1% 25% 2% 25%;
         text-align: center;
         border-radius: 50px;
         box-shadow: 0px 0px 20px var(--ombre-moyenne);
@@ -188,8 +188,8 @@ a:active {
     .bulle_info {
         background-color: var(--font-contenu);
         border: solid var(--font-contours);
-        padding: 4px;
-        margin: 2% 20% 2% 20%;
+        padding: 25px;
+        margin: 2% 20% 1.5% 20%;
         text-align: center;
         border-radius: 100px;
         box-shadow: 0px 0px 15px var(--ombre-douce);
@@ -201,34 +201,7 @@ a:active {
         background-color: var(--font-contenu);
         border: solid var(--font-contours);
         padding: 2px;
-        margin: 1% 10% 1% 10%;
-        text-align: center;
-        border-radius: 100px;
-        box-shadow: 0px 0px 15px var(--ombre-douce);
-        transition: 1s;
-    }
-}
-
-
-/*  bulle_action  */
-@media(min-width:1000px){
-    .bulle_action {
-        background-color: var(--font-contenu);
-        border: solid var(--font-contours);
-        padding: 4px;
-        margin: 2% 20% 2% 20%;
-        text-align: center;
-        border-radius: 100px;
-        box-shadow: 0px 0px 15px var(--ombre-douce);
-        transition: 1s;
-    }
-}
-@media(max-width:999px){
-    .bulle_action {
-        background-color: var(--font-contenu);
-        border: solid var(--font-contours);
-        padding: 2px;
-        margin: 1% 10% 1% 10%;
+        margin: 1% 10% 1.5% 10%;
         text-align: center;
         border-radius: 100px;
         box-shadow: 0px 0px 15px var(--ombre-douce);
@@ -247,7 +220,7 @@ a:active {
         background-color: var(--font-contenu);
         border: solid var(--font-contours);
         padding: 2px;
-        margin: 1% 35% 1% 35%;
+        margin: 3% 35% 1% 35%;
         border-radius: 25px;
         box-shadow: 0px 0px 25px var(--ombre-moyenne);
         transition: 1s;
@@ -262,7 +235,7 @@ a:active {
         background-color: var(--font-contenu);
         border: solid var(--font-contours);
         padding: 2px;
-        margin: 1% 10% 1% 10%;
+        margin: 3% 10% 1% 10%;
         border-radius: 25px;
         box-shadow: 0px 0px 25px var(--ombre-moyenne);
         transition: 1s;
@@ -293,23 +266,9 @@ a:active {
 }
 
 @media(min-width:1000px){
-    .bulle_action:hover {
-        color: var(--objet-survol);
-        transform: scale(0.95);
-        box-shadow: 0px 0px 10px var(--objet-survol);
-        transition: 1s;
-    }
-    .bulle_action:hover * {
-        color: inherit;
-        border: none;
-        transition: 1s;
-    }
-}
-
-@media(min-width:1000px){
     .bulle_lien:hover {
         border-radius: 50px;
-        margin: 1% 40% 1% 40%;
+        margin: 3% 40% 1% 40%;
         box-shadow: 0px 0px 50px var(--ombre-forte);
         transition: 0.5s;
     }
@@ -337,7 +296,7 @@ a:active {
 @media(min-width:1000px){
     .bulle_lien:active {
         border-radius: 100px;
-        margin: 1% 39.5% 1% 39.5%;
+        margin: 3% 39.5% 1% 39.5%;
         box-shadow: 0px 0px 50px var(--ombre-douce);
         transition: 0.5s;
     }
@@ -345,7 +304,7 @@ a:active {
 @media(max-width:999px){
     .bulle_lien:active {
         border-radius: 100px;
-        margin: 1% 19.5% 1% 19.5%;
+        margin: 3% 19.5% 1% 19.5%;
         box-shadow: 0px 0px 50px var(--ombre-douce);
         transition: 0.5s;
     }
