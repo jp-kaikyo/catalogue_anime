@@ -5,36 +5,31 @@
 
 //  recup des ID  //
 let recherche_anime = document.getElementById("recherche");
+
 let titre_anime = document.getElementById("titre");
 let visuelle_anime = document.getElementById("visuelle");
 let histoire_anime = document.getElementById("histoire");
-let button_charger_anime = document.getElementById("btn_charger");
 
+let button_charger = document.getElementById("btn_charger");
 
 
 button_charger.onclick = function(){
-    
-    let recherche = recherche_anime.innerHTML;
-
-
-    let url = "https://worldtimeapi.org/api/timezone/Europe/Paris";
+    let recherche = recherche_anime.value;
+    let url = "https://api.jikan.moe/v4/anime?q="+recherche+"&limit=1"
 
     fetch(url)
     .then(response => response.json())
     .then(data => {
         console.log(data);
+        let anime = data.data[0]
         
-        let titre_anime = data.datetime;
-        let visuelle_anime = data.datetime;
-        let histoire_anime = data.datetime;
-        
-        document.getElementById("titre").innerHTML = titre_anime;
-        document.getElementById("visuelle").innerHTML = visuelle_anime;
-        document.getElementById("histoire").innerHTML = histoire_anime;
+        titre_anime.innerHTML = anime.title;
+        histoire_anime.innerHTML = anime.synopsis;
+        visuelle_anime.src = anime.images.jpg.image_url
+
+
+        //  débogueur  //
+        console.log("[ API ]")
+        console.log(anime)
     })
 }
-
-
-//  débogueur  //
-console.log("[ API ]")
-console.log(recherche)
