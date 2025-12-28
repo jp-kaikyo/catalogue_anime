@@ -132,13 +132,13 @@ a:active {
 @media(min-width:1000px){
     .bulle_principal {
         padding: 6px;
-        margin: 2% 35% 8% 35%;
+        margin: 2% 35% 2% 35%;
     }
 }
 @media(max-width:999px){
     .bulle_principal {
         padding: 3px;
-        margin: 1% 0% 4% 0%;
+        margin: 1% 0% 1% 0%;
     }
 }
 
@@ -156,13 +156,13 @@ a:active {
 @media(min-width:1000px){
    .bulle_secondaire {
         padding: 10px;
-        margin: 2% 43% 4% 43%;
+        margin: 2% 43% 2% 43%;
     }
 }
 @media(max-width:999px){
    .bulle_secondaire {
         padding: 5px;
-        margin: 10% 20% 5% 20%;
+        margin: 1% 20% 1% 20%;
     }
 }
 
@@ -186,7 +186,7 @@ a:active {
 @media(max-width:999px){
     .bulle_info {
         padding: 2px;
-        margin: 1% 1% 10% 1%;
+        margin: 2% 1% 2% 1%;
     }
 }
 
